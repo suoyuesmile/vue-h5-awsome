@@ -1,0 +1,8 @@
+*.js linguist-language=vue
+*.css linguist-language=vue
+*.html linguist-language=vue
+*.c linguist-language=vue
+*.c++ linguist-language=vue
+*.php linguist-language=vue
+*.python linguist-language=vue
+*.scss linguist-language=vue
