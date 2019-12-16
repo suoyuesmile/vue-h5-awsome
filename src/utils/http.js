@@ -8,8 +8,7 @@ axios.defaults.baseURL = defaultBaseUrl // 数据接口域名统一配置.env
 // http request 拦截器
 axios.interceptors.request.use(
   (config) => {
-    config.headers = {
-    }
+    config.headers = {}
     return config
   },
   (err) => {
