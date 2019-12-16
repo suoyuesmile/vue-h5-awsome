@@ -10,13 +10,9 @@
 
 <script>
 import HelloWorld from '@/components/HelloWorld.vue'
-import { login } from '@/api/user'
 
 export default {
   name: 'home',
-  mounted () {
-    this.init()
-  },
   components: {
     HelloWorld
   },
@@ -27,18 +23,6 @@ export default {
         username: '',
         verifyCode: ''
       }
-    }
-  },
-  methods: {
-    init () {
-      this.handleSubmit()
-    },
-    async handleSubmit () {
-      const token = await login({
-        username: 'shaosuo',
-        verifyCode: '123'
-      })
-      console.log(token)
     }
   }
 }
